@@ -6,6 +6,7 @@ public class Computadora {
     private Monitor monitor;
     private Teclado teclado;
     private Raton raton; 
+    private int precio;
     private static int pcCounter;
 
  public Computadora(){
@@ -50,12 +51,17 @@ public class Computadora {
         this.raton = raton;
     }
 
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
     @Override
     public String toString() {
-        return "Computadora{" + "idComputadora=" + idComputadora + ", nombre=" + nombre + ", monitor=" + monitor + ", teclado=" + teclado + ", raton=" + raton + '}';
+        return "Computadora{" + "idComputadora=" + idComputadora + ", nombre=" + nombre + ", monitor=" + monitor + ", teclado=" + teclado + ", raton=" + raton + ", precio=" + precio + '}';
     }
-    
-
-    
-    
+      
 }
