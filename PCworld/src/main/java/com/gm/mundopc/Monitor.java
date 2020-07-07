@@ -7,12 +7,8 @@ public class Monitor {
     private double tamaño;
     private static int contadorMonitores;
 
-    public Monitor() {
-        this.idMonitor = ++contadorMonitores;
-    }
-
     public Monitor(String marca, double tamaño) {
-        this();
+        this.idMonitor = ++contadorMonitores;
         this.marca = marca;
         this.tamaño = tamaño;
     }

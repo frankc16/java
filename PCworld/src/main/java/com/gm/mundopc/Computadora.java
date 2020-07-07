@@ -1,8 +1,8 @@
 package com.gm.mundopc;
 
 public class Computadora {
-    private int idComputadora;
     private String nombre;
+    private int idComputadora;
     private Monitor monitor;
     private Teclado teclado;
     private Raton raton; 
@@ -12,11 +12,14 @@ public class Computadora {
  public Computadora(){
      this.idComputadora = ++pcCounter;
  }
- public Computadora(Monitor monitor, Teclado teclado, Raton raton){
+ public Computadora(Monitor monitor, Teclado teclado, Raton raton, int precio, String nombre){
      this();
+     
      this.monitor = monitor;
      this.teclado = teclado;
      this.raton = raton;
+     this.precio = precio;
+     this.nombre = nombre;
  }
 
     public String getNombre() {

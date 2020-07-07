@@ -12,6 +12,7 @@ public class Orden {
 
     public Orden() {
         this.idOrden = ++contadorOrden;
+        computadoras = new Computadora[MAXORDEN];
     }
 
     public void agregarComputadora(Computadora computadora) {
